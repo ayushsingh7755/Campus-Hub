@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Google+Sans+Flex:opsz,wght,GRAD@6..144,488,6&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght,GRAD@6..144,488,6&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+@import "tailwindcss";
+
+:root{
+    --purple: #8455EF;
+    --purple-light: #9B6FF5;
+    --purple-dim: #6B3FD0;
+    --neon: #B490FF;
+    --neon-blue: #7EB8FF;
+    --bg: #07060F;
+    --bg2: #0E0C1A;
+    --bg3: #130F22;
+    --surface: rgba(255, 255, 255, 0.04);
+    --surface-hover: rgba(255, 255, 255, 0.07);
+    --border: rgba(255, 255, 255, 0.08);
+    --border-glow: rgba(132, 85, 239, 0.4);
+    --text: #F0ECFF;
+    --text-muted: #9B96B8;
+    --text-dim: #5E5A7A;
+    --radius: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --services: #a78bfa;
+    --services-dim: rgba(167, 139, 250, 0.12);
+    --products: #2ee8a5;
+    --products-dim: rgba(46, 232, 165, 0.12);
+    --bg-input: #1f2126;
+    --bg-card: #1a1c20;
+    --text-2: #8a8b93;
+    --text-3: #545560;
+    --accent: #2ee8a5;
+
+}

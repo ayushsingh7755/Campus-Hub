@@ -1,0 +1,58 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+.bgnav{
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse 80% 60% at 10% 0%, rgba(132, 85, 239, 0.18) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 90% 20%, rgba(126, 184, 255, 0.10) 0%, transparent 55%), radial-gradient(ellipse 50% 70% at 50% 100%, rgba(155, 111, 245, 0.12) 0%, transparent 60%);
+
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+.service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 18px;
+    text-align: center;
+    transition: border-color 0.3s, background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+.service-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.service-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+.service-tag {
+    font-size: 12px;
+    color: var(--text-dim);
+}
+.service-card:hover {
+    border-color: rgba(132, 85, 239, 0.45);
+    background: var(--surface-hover);
+    transform: translateY(-3px);
+}
+@media screen and (max-width:888px) {
+    .navRes{
+       
+    }
+    
+}
+.body{
+    overflow-x: hidden;
+}
