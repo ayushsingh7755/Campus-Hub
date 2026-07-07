@@ -1,11 +1,19 @@
 import "dotenv/config";
-import { connectDb } from "./database/connect.js";
 import app from "./App.js";
+import { connectDb } from "./database/connect.js";
+
+const PORT = process.env.PORT || 4000;
 
 app.get("/", (req, res) => {
   res.send("Backend is running successfully.");
 });
 
-await connectDb();
-
-export default app;
+connectDb()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Database connection failed:", err);
+  });
