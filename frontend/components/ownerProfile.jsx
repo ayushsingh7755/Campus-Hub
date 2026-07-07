@@ -15,7 +15,7 @@ function ownerProfile() {
   const fetchOwner = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:4000/users/profile/${ownerId}`,
+        `${import.meta.env.RENDER_BACKEND_URL}/users/profile/${ownerId}`,
         { withCredentials: true }
       );
       setOwner(res.data);

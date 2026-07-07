@@ -70,7 +70,7 @@ function registration() {
       data.append("avatar", avatar);
 
       const res = await axios.post(
-        "http://localhost:4000/users/register",
+        `${import.meta.env.RENDER_BACKEND_URL}/users/register`,
         data,
         {
           headers: {

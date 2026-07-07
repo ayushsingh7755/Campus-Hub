@@ -44,7 +44,7 @@ function App() {
     try {
 
       const res = await axios.get(
-        'http://localhost:4000/users/getuser',
+        `${import.meta.env.RENDER_BACKEND_URL}/users/getuser`,
         { withCredentials: true }
       )
 

@@ -14,7 +14,7 @@ function myBids() {
 
   const getMyBids = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/product/bid/mybids', { withCredentials: true })
+      const res = await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/bid/mybids`, { withCredentials: true })
       setBids(res.data)
     } catch (error) {
       if (error.response?.data?.message === 'No Bids') {

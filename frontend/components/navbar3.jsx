@@ -14,7 +14,7 @@ function navbar3() {
   }, [])
   const getUser=async()=>{
     try {
-      const res=await axios.get('http://localhost:4000/users/getuser',{withCredentials:true})
+      const res=await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/users/getuser`,{withCredentials:true})
     
     
       if(res.data.success){

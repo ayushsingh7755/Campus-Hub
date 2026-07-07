@@ -9,7 +9,7 @@ const app=express()
 
 app.use(cors({
     origin:["http://localhost:5173",
-     "https://campus-hub-4i9c.vercel.app"
+     "https://campus-hub-j6fr.onrender.com"
     ],
     credentials:true
 }));

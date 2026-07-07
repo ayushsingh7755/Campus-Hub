@@ -15,7 +15,7 @@ function incomingBids() {
 
   const getBids = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/product/bid/incomingbids', { withCredentials: true })
+      const res = await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/bid/incomingbids`, { withCredentials: true })
       setBids(res.data)
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to load bids.')
@@ -28,7 +28,7 @@ function incomingBids() {
     setActionLoading(prev => ({ ...prev, [bidId]: action }))
     try {
       await axios.patch(
-        `http://localhost:4000/product/bid/${bidId}/${action}`,
+        `${import.meta.env.RENDER_BACKEND_URL}/product/bid/${bidId}/${action}`,
         {},
         { withCredentials: true }
       )

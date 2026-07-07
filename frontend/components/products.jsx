@@ -21,7 +21,7 @@ function services() {
     }, [collegeName])
     const setCards=async()=>{
         try {
-            const serviceData=await axios.get(`http://localhost:4000/product/getProducts/${collegeName}`,{withCredentials:true})
+            const serviceData=await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/getProducts/${collegeName}`,{withCredentials:true})
         
             setCardData(serviceData.data)
             

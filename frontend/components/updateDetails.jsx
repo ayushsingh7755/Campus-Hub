@@ -22,7 +22,7 @@ function updateDetails() {
      
 
       const res = await axios.post(
-        "http://localhost:4000/users/updatedetails",
+        `${import.meta.env.RENDER_BACKEND_URL}/users/updatedetails`,
          
         formdata,
         { withCredentials:true,

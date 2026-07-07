@@ -15,7 +15,7 @@ function outgoingbuyRequests() {
   const getBuyRequests = async () => {
     try {
       const buyRes = await axios.get(
-        'http://localhost:4000/product/buy/getoutgoingbuys',
+        `${import.meta.env.RENDER_BACKEND_URL}/product/buy/getoutgoingbuys`,
         { withCredentials: true }
       )
       setBuys(buyRes.data)
