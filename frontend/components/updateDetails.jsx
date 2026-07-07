@@ -22,7 +22,7 @@ function updateDetails() {
      
 
       const res = await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/users/updatedetails`,
+        `${import.meta.env.VITE_BACKEND_URL}/users/updatedetails`,
          
         formdata,
         { withCredentials:true,

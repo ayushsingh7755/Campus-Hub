@@ -17,7 +17,7 @@ function incomingbuyRequests() {
   const getBuyRequests = async () => {
     try {
       const buyRes = await axios.get(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/buy/getincomingbuys`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/buy/getincomingbuys`,
         { withCredentials: true }
       )
       setBuys(buyRes.data)
@@ -32,7 +32,7 @@ function incomingbuyRequests() {
     setActionLoading(prev => ({ ...prev, [buyId]: action }))
     try {
       await axios.patch(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/buy/${buyId}/${action}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/buy/${buyId}/${action}`,
         {},
         { withCredentials: true }
       )

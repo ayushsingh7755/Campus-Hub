@@ -20,7 +20,7 @@ function services() {
     }, [collegeName])
     const setCards=async()=>{
         try {
-            const serviceData=await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/getServices/${collegeName}`,{withCredentials:true})
+            const serviceData=await axios.get(`${import.meta.env.VITE_BACKEND_URL}/product/getServices/${collegeName}`,{withCredentials:true})
         
             setCardData(serviceData.data)   
             

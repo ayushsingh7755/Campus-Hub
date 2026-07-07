@@ -21,7 +21,7 @@ function contactForBuy() {
   const getOwnerOrBuyer = async () => {
     try {
       const res  = await axios.get(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/getOneBuyData/${buyId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/getOneBuyData/${buyId}`,
         { withCredentials: true }
       )
       const buyData = res.data

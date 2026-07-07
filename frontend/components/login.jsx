@@ -26,7 +26,7 @@ function login() {
   const handleSubmit=async(e)=>{
     e.preventDefault()
     try {
-      const res=await axios.post(`${import.meta.env.RENDER_BACKEND_URL}/users/login`,formdata,{ withCredentials: true})
+      const res=await axios.post(`${import.meta.env.VITE_BACKEND_URL}/users/login`,formdata,{ withCredentials: true})
       
       
       

@@ -54,7 +54,7 @@ function product() {
       });
 
       const res = await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/register`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/register`,
         data,
         {
           withCredentials: true,

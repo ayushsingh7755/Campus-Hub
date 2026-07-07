@@ -6,7 +6,7 @@ const showcase2 = () => {
     const navigate=useNavigate();
     const handleClick=async(e)=>{
       try {
-        const res=await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/users/getuser`,
+        const res=await axios.get(`${import.meta.env.VITE_BACKEND_URL}/users/getuser`,
           {withCredentials:true})
         
         if(res.data.success===true){

@@ -44,7 +44,7 @@ function App() {
     try {
 
       const res = await axios.get(
-        `${import.meta.env.RENDER_BACKEND_URL}/users/getuser`,
+        `${import.meta.env.VITE_BACKEND_URL}/users/getuser`,
         { withCredentials: true }
       )
 

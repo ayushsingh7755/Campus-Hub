@@ -12,7 +12,7 @@ function popular() {
   }, []);
   const fetchProducts = async () => {
     
-    const res = await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/getProducts`);
+    const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/product/getProducts`);
    
     setCards(res.data);
    

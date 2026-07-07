@@ -37,7 +37,7 @@ function productDetails() {
   const getProduct = async () => {
     try {
       const res = await axios.get(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/getProducts/one/${productId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/getProducts/one/${productId}`,
         { withCredentials: true }
       );
       setProduct(res.data);
@@ -63,7 +63,7 @@ function productDetails() {
     setBidSubmitting(true);
     try {
       await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/bid/${productId}/${seller}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/bid/${productId}/${seller}`,
         { bidAmount },
         { withCredentials: true }
       );
@@ -89,7 +89,7 @@ function productDetails() {
     setBuySubmitting(true);
     try {
       await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/buyrequest/${productId}/${seller}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/buyrequest/${productId}/${seller}`,
         {},
         { withCredentials: true }
       );

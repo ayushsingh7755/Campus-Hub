@@ -22,7 +22,7 @@ function contactForBid() {
   const getOneBid = async () => {
     try {
       const res     = await axios.get(
-        `${import.meta.env.RENDER_BACKEND_URL}/product/getOneBidData/${bidId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/product/getOneBidData/${bidId}`,
         { withCredentials: true }
       )
       const bidData = res.data

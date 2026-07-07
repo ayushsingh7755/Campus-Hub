@@ -9,7 +9,7 @@ const accountSidebar = ({ user, activeTab, setActiveTab }) => {
 
     const handleLogout = async () => {
         try {
-            const res = await axios.post(`${import.meta.env.RENDER_BACKEND_URL}/users/logout`,
+            const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/users/logout`,
                 {},
                 { withCredentials: true }
             )

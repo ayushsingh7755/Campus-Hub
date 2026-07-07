@@ -58,7 +58,7 @@ function changeAvatar() {
       const data = new FormData();
       data.append("avatar", file);
       const res = await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/users/changeavatar`,
+        `${import.meta.env.VITE_BACKEND_URL}/users/changeavatar`,
         data,
         { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
       );

@@ -36,7 +36,7 @@ function changePassword() {
     }
     try {
       const res = await axios.post(
-        `${import.meta.env.RENDER_BACKEND_URL}/users/updatepassword`,
+        `${import.meta.env.VITE_BACKEND_URL}/users/updatepassword`,
         {
           oldPassword: formdata.oldPassword,
           newPassword: formdata.newPassword,

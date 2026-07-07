@@ -15,7 +15,7 @@ function userProducts() {
     }, [])
     const setCards=async()=>{
         try {
-            const serviceData=await axios.get(`${import.meta.env.RENDER_BACKEND_URL}/product/getUserProducts`,{withCredentials:true})
+            const serviceData=await axios.get(`${import.meta.env.VITE_BACKEND_URL}/product/getUserProducts`,{withCredentials:true})
             console.log(serviceData)
             setCardData(serviceData.data)    
            
