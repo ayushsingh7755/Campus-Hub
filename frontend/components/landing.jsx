@@ -11,7 +11,7 @@ import { userContext } from './context.jsx';
 
 
 function landing() {
-  console.log(`${import.meta.env.VITE_BACKEND_URL}`)
+  
 
   
   return (
