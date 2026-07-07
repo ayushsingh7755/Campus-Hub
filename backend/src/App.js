@@ -9,7 +9,7 @@ const app=express()
 
 app.use(cors({
     origin:["http://localhost:5173",
-     "https://campus-hub-84sr.vercel.app/"
+     "https://campus-hub-84sr.vercel.app"
     ],
     credentials:true
 }));
