@@ -8,7 +8,9 @@ import { getAuth } from './middleware/auth.middleware.js'
 const app=express()
 
 app.use(cors({
-    origin:true,
+    origin:["http://localhost:5173",
+     "https://campus-hub-84sr.vercel.app"
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials:true
 }));
