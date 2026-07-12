@@ -64,33 +64,33 @@ function login() {
   </div>
 
   {/* main code above for bg color only */}
-  <div className="relative flex gap-34 justify-center h-screen items-center z-1">
+  <div className="relative flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-24 xl:gap-34 justify-center items-center min-h-screen py-10 px-4 sm:px-6 z-1">
 
-    <div className=' rounded-md m-5 bg-[rgb(38,38,38)] w-[380px] h-auto hover:scale-102 transition duration-400'>
-        <div className='mb-4 ml-3 '>< p className=' text-amber-50 font-bold text-4xl mb-0.3 mt-9'>Access Node</p> 
+    <div className=' rounded-md m-0 sm:m-5 bg-[rgb(38,38,38)] w-full max-w-[380px] h-auto hover:scale-102 transition duration-400'>
+        <div className='mb-4 ml-3 '>< p className=' text-amber-50 font-bold text-3xl sm:text-4xl mb-0.3 mt-9'>Access Node</p> 
         <p className='text-blue-200 '>Verify your identity to enter the platform</p>
         </div>
 
          <form onSubmit={handleSubmit} className='flex flex-col gap-5 mt-15 py-9 bg-[var(--surface)]' action="post">
             
-               <input className=' hover:scale-110 transition duration-300  h-11 ml-3 bg-[var(--bg-input)] text-amber-50 w-[350px] mb-6 h-10 rounded-md p-4' type="text" required={true} name="username" value={formdata.username} onChange={handleChange} placeholder='Username or email'/>
+               <input className=' hover:scale-110 transition duration-300  h-11 ml-3 mr-3 bg-[var(--bg-input)] text-amber-50 w-auto sm:w-[350px] mb-6 h-10 rounded-md p-4' type="text" required={true} name="username" value={formdata.username} onChange={handleChange} placeholder='Username or email'/>
         
-        <input className='hover:scale-110 transition duration-300 ml-3  mb-0 h-11 bg-[var(--bg-input)] text-amber-50 w-[350px] h-10  rounded-md p-4' type="password" name="password" required={true} value={formdata.password} onChange={handleChange} placeholder='Password' />  
+        <input className='hover:scale-110 transition duration-300 ml-3 mr-3  mb-0 h-11 bg-[var(--bg-input)] text-amber-50 w-auto sm:w-[350px] h-10  rounded-md p-4' type="password" name="password" required={true} value={formdata.password} onChange={handleChange} placeholder='Password' />  
         {errormsg&&(<p className='text-red-600 text-center'>{errormsg}</p>)}
             
             
 
 
         
-        <button type="submit" className='ml-3  shadow-[0_0_15px_rgba(186,158,255,0.3)] rounded-[4px] bg-[#8455EF] text-[#390061] w-300px mt-1 mb-0  h-13  w-[350px]  border-2  border-amber-50 cursor-pointer text-[rgb(57,0,140)] font-bold cursor-pointer hover:bg-[#9B6FF5] hover:shadow-[0_0_28px_rgba(186,158,255,0.55)] hover:-translate-y-0.5
+        <button type="submit" className='ml-3 mr-3  shadow-[0_0_15px_rgba(186,158,255,0.3)] rounded-[4px] bg-[#8455EF] text-[#390061] mt-1 mb-0  h-13  w-auto sm:w-[350px]  border-2  border-amber-50 cursor-pointer text-[rgb(57,0,140)] font-bold cursor-pointer hover:bg-[#9B6FF5] hover:shadow-[0_0_28px_rgba(186,158,255,0.55)] hover:-translate-y-0.5
     active:bg-[#7040D9]  active:translate-y-0 transition-all duration-200 ease-in-out '>Authorize Access</button>
         
 
     </form>
     
     </div>
-    <div className='h-60 w-[380px]'>
-      <h3 className='font-bold text-white text-4xl'>New to the store</h3>
+    <div className='h-auto lg:h-60 w-full max-w-[380px]'>
+      <h3 className='font-bold text-white text-3xl sm:text-4xl'>New to the store</h3>
       <p className='text-white ml-1 mt-2'>Join the chain where the trusted products can be buyed and selled in the easiest way ever possible</p>
       <button onClick={()=>navigate('/register')}  className="mt-6 ml-1 p-1 w-full h-[60px] rounded-[4px] bg-[#1A1919] text-[#8455EF] font-['Space_Grotesk'] font-bold text-lg tracking-widest border border-[rgba(120,117,117,0.3)] transition-all duration-200 ease-in-out cursor-pointer
   hover:bg-[#251f38] hover:border-[rgba(132,85,239,0.6)]
