@@ -109,6 +109,7 @@ function product() {
                       setSelected(1);
                       setformdata({ ...formdata, category: e.target.value });
                     }}
+                    checked={selected === 1}
                     className="w-0 h-0 opacity-0"
                     type="radio"
                     value="services"
@@ -130,6 +131,7 @@ function product() {
                       setSelected(2);
                       setformdata({ ...formdata, category: e.target.value });
                     }}
+                    checked={selected === 2}
                     className="w-0 h-0 opacity-0"
                     type="radio"
                     value="products"
